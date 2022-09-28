@@ -15,10 +15,13 @@
 
     <form action="/greet" method="GET" id="greetForm">
       <div>
-        <label for="greetField">To whom?</label>
+        <label for="greetField">What is your name?</label>
         <input name="name" id="greetField">
-        <button>Greetings!</button>
+        <label for="greetField2">Type a grade</label>
+        <input name="grade" id="greetField2">
+        <button>Submit</button>
         <p th:text="'Greetings, ' + ${name} + '!'"></p>
+        <p th:text="'Your grade is, ' + ${grade} + '!'"></p>
       </div>
     </form>
   </div>
